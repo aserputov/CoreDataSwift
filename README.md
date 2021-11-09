@@ -1,1 +1,1 @@
-### Swift Application with Sqlite CoreData functionality.
+### Swift Application made with SQLite DB + CoreData functionality.
