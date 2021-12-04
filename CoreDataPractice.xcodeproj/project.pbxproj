@@ -17,6 +17,8 @@
 		0188BC1B275C9A6200E58594 /* CoreDataPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188BC1A275C9A6200E58594 /* CoreDataPracticeTests.swift */; };
 		0188BC25275C9A6200E58594 /* CoreDataPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188BC24275C9A6200E58594 /* CoreDataPracticeUITests.swift */; };
 		0188BC27275C9A6200E58594 /* CoreDataPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188BC26275C9A6200E58594 /* CoreDataPracticeUITestsLaunchTests.swift */; };
+		0188BC35275CA4A100E58594 /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188BC33275CA4A100E58594 /* Employee+CoreDataClass.swift */; };
+		0188BC36275CA4A100E58594 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188BC34275CA4A100E58594 /* Employee+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0188BC20275C9A6200E58594 /* CoreDataPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0188BC24275C9A6200E58594 /* CoreDataPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITests.swift; sourceTree = "<group>"; };
 		0188BC26275C9A6200E58594 /* CoreDataPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0188BC33275CA4A100E58594 /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0188BC34275CA4A100E58594 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		0188BBF4275C9A6000E58594 = {
 			isa = PBXGroup;
 			children = (
+				0188BC33275CA4A100E58594 /* Employee+CoreDataClass.swift */,
+				0188BC34275CA4A100E58594 /* Employee+CoreDataProperties.swift */,
 				0188BBFF275C9A6000E58594 /* CoreDataPractice */,
 				0188BC19275C9A6200E58594 /* CoreDataPracticeTests */,
 				0188BC23275C9A6200E58594 /* CoreDataPracticeUITests */,
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0188BC05275C9A6000E58594 /* ViewController.swift in Sources */,
+				0188BC36275CA4A100E58594 /* Employee+CoreDataProperties.swift in Sources */,
 				0188BC01275C9A6000E58594 /* AppDelegate.swift in Sources */,
 				0188BC03275C9A6000E58594 /* SceneDelegate.swift in Sources */,
+				0188BC35275CA4A100E58594 /* Employee+CoreDataClass.swift in Sources */,
 				0188BC0B275C9A6000E58594 /* CoreDataPractice.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
