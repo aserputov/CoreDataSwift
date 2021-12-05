@@ -46,6 +46,12 @@ class ViewController: UIViewController {
         do{
             let result:[Employee] = try self.context.fetch(request)
             print("\(result.count)")
+            
+            for employee in result{
+                print("\(employee.name ?? "N/A")")
+                print("\(employee.dateHired ?? "N/A")")
+            }
+            
         }catch{
             
         }
