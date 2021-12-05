@@ -81,7 +81,24 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func DeleteALL(_ sender: Any) {
+        let request:NSFetchRequest<Employee> = Employee.fetchRequest()
         
+        
+        request.predicate = NSPredicate(format: "name == %@", "Abigail") // search Results
+        
+        do{
+            let result:[Employee] = try self.context.fetch(request)
+            
+            let alex = result.first!
+            alex.name = "Abigail"
+            
+            
+            try self.context.delete(alex)
+//            print("\(alex.name)")
+            try self.context.save()
+        }catch{
+            
+        }
     }
     
     
