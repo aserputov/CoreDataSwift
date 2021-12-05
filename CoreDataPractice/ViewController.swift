@@ -5,6 +5,7 @@
 //  Created by Anatoliy Serputov on 2021-12-05.
 //
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -39,5 +40,15 @@ class ViewController: UIViewController {
         hiredLabel.text = ""
     }
     
+    @IBAction func GetAllEmp(_ sender: Any) {
+        let request:NSFetchRequest<Employee> = Employee.fetchRequest()
+        
+        do{
+            let result:[Employee] = try self.context.fetch(request)
+            print("\(result.count)")
+        }catch{
+            
+        }
+    }
 }
 
