@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         let request:NSFetchRequest<Employee> = Employee.fetchRequest()
         
         
-        request.predicate = NSPredicate(format: "name == %@", "Alex") // search Results 
+        request.predicate = NSPredicate(format: "name == %@", "Alex") // search Results
         
         do{
             let result:[Employee] = try self.context.fetch(request)
@@ -59,5 +59,31 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func UpdateButton(_ sender: Any) {
+        let request:NSFetchRequest<Employee> = Employee.fetchRequest()
+        
+        
+        request.predicate = NSPredicate(format: "name == %@", "Alex") // search Results
+        
+        do{
+            let result:[Employee] = try self.context.fetch(request)
+            
+            let alex = result.first!
+            alex.name = "Abigail"
+            
+            
+            try self.context.save()
+            print("\(alex.name)")
+            
+        }catch{
+            
+        }
+    }
+    @IBAction func DeleteALL(_ sender: Any) {
+        
+    }
+    
+    
 }
 
