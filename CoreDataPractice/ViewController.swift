@@ -11,15 +11,17 @@ class ViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var hiredLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    func addEmployee() {
+    func addEmployee(name:String, dateHired:String) {
         let e1 = Employee(context: self.context)
-        e1.name = "Anatoliy S"
-        e1.dateHired = "01.01.2022"
+        e1.name = "\(name)"
+        e1.dateHired = "\(dateHired)"
         do{
             try self.context.save()
             
@@ -30,7 +32,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func GoEmp(_ sender: Any) {
-        addEmployee()
+        let empName = nameLabel.text!
+        let empDate = hiredLabel.text!
+        addEmployee(name: empName, dateHired: empDate)
+        nameLabel.text  = ""
+        hiredLabel.text = ""
     }
     
 }
